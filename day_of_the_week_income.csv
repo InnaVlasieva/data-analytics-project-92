@@ -1,155 +1,155 @@
-"first_name","last_name","week_day","week_income"
-Stearns,MacFeather,Thursday ,22585497
-Stearns,MacFeather,Wednesday,24953855
-Stearns,MacFeather,Sunday   ,27431435
-Stearns,MacFeather,Saturday ,27623848
-Stearns,MacFeather,Friday   ,28022436
-Stearns,MacFeather,Monday   ,30778276
-Stearns,MacFeather,Tuesday  ,31056506
-Ann,Dull,Sunday   ,34138288
-Ann,Dull,Wednesday,35589006
-Ann,Dull,Thursday ,36627442
-Ann,Dull,Friday   ,37433122
-Ann,Dull,Saturday ,37658782
-Ann,Dull,Tuesday  ,38097808
-Ann,Dull,Monday   ,39656842
-Anne,Ringer,Wednesday,46106241
-Anne,Ringer,Saturday ,48579238
-Anne,Ringer,Sunday   ,49050829
-Meander,Smith,Wednesday,49655899
-Anne,Ringer,Friday   ,51753352
-Meander,Smith,Monday   ,52160238
-Meander,Smith,Saturday ,53094398
-Anne,Ringer,Monday   ,53386961
-Meander,Smith,Friday   ,53551958
-Anne,Ringer,Tuesday  ,55417862
-Anne,Ringer,Thursday ,55678731
-Meander,Smith,Sunday   ,56678280
-Meander,Smith,Thursday ,56688841
-Morningstar,Greene,Thursday ,61407062
-Morningstar,Greene,Friday   ,62929145
-Meander,Smith,Tuesday  ,63913954
-Morningstar,Greene,Saturday ,64598715
-Morningstar,Greene,Wednesday,64838804
-Cheryl,Carson,Wednesday,66729907
-Morningstar,Greene,Monday   ,67381291
-Morningstar,Greene,Tuesday  ,67737441
-Morningstar,Greene,Sunday   ,68473054
-Cheryl,Carson,Saturday ,69224918
-Cheryl,Carson,Sunday   ,69553596
-Cheryl,Carson,Thursday ,70730736
-Cheryl,Carson,Tuesday  ,76905547
-Cheryl,Carson,Monday   ,77977657
-Cheryl,Carson,Friday   ,80473505
-Reginald,Blotchet-Halls,Sunday   ,80496473
-Reginald,Blotchet-Halls,Wednesday,80548671
-Sylvia,Panteley,Wednesday,85876351
-Sylvia,Panteley,Saturday ,87097890
-Johnson,White,Sunday   ,88933984
-Johnson,White,Wednesday,89036569
-Reginald,Blotchet-Halls,Tuesday  ,89298154
-Reginald,Blotchet-Halls,Thursday ,89971578
-Marjorie,Green,Thursday ,90204716
-Sylvia,Panteley,Friday   ,91390801
-Sylvia,Panteley,Thursday ,91590683
-Johnson,White,Thursday ,91715665
-Johnson,White,Friday   ,91757930
-Johnson,White,Saturday ,91955960
-Reginald,Blotchet-Halls,Saturday ,92451664
-Charlene,Locksley,Sunday   ,93745117
-Marjorie,Green,Wednesday,94949352
-Marjorie,Green,Saturday ,95303143
-Sylvia,Panteley,Sunday   ,95337213
-Sylvia,Panteley,Monday   ,96399427
-Reginald,Blotchet-Halls,Friday   ,96796982
-Marjorie,Green,Monday   ,97539868
-Charlene,Locksley,Friday   ,97761375
-Johnson,White,Monday   ,98560782
-Sylvia,Panteley,Tuesday  ,99289901
-Marjorie,Green,Friday   ,99954937
-Johnson,White,Tuesday  ,100275590
-Charlene,Locksley,Saturday ,100507642
-Charlene,Locksley,Thursday ,102081558
-Charlene,Locksley,Tuesday  ,102419646
-Marjorie,Green,Tuesday  ,102488971
-Reginald,Blotchet-Halls,Monday   ,103178571
-Burt,Gringlesby,Thursday ,103250742
-Marjorie,Green,Sunday   ,104815534
-Charlene,Locksley,Wednesday,106731411
-Burt,Gringlesby,Saturday ,108212069
-Charlene,Locksley,Monday   ,108450663
-Burt,Gringlesby,Friday   ,109360163
-Burt,Gringlesby,Sunday   ,112782281
-Burt,Gringlesby,Tuesday  ,114454018
-Burt,Gringlesby,Monday   ,118429815
-Burt,Gringlesby,Wednesday,119047498
-Michael,O'Leary,Tuesday  ,125258271
-Michael,O'Leary,Sunday   ,125981635
-Michael,O'Leary,Thursday ,130193803
-Michael,O'Leary,Saturday ,131118669
-Livia,Karsen,Monday   ,132386625
-Michael,O'Leary,Wednesday,134525041
-Livia,Karsen,Sunday   ,137975385
-Michael,O'Leary,Monday   ,138096278
-Sheryl,Hunter,Wednesday,140290965
-Michael,O'Leary,Friday   ,142326764
-Livia,Karsen,Saturday ,142421335
-Sheryl,Hunter,Saturday ,143802265
-Livia,Karsen,Tuesday  ,145696078
-Sheryl,Hunter,Thursday ,148434253
-Sheryl,Hunter,Sunday   ,148514539
-Sheryl,Hunter,Monday   ,153301531
-Livia,Karsen,Wednesday,156662691
-Sheryl,Hunter,Friday   ,158669557
-Sheryl,Hunter,Tuesday  ,163754751
-Dean,Straight,Wednesday,168092852
-Livia,Karsen,Thursday ,168820566
-Livia,Karsen,Friday   ,172939429
-Dean,Straight,Friday   ,176048825
-Dean,Straight,Saturday ,176094744
-Dean,Straight,Sunday   ,176873006
-Dean,Straight,Thursday ,182913508
-Dean,Straight,Tuesday  ,183459092
-Dean,Straight,Monday   ,192550177
-Abraham,Bennet,Wednesday,214842815
-Abraham,Bennet,Saturday ,219357051
-Abraham,Bennet,Thursday ,226133921
-Innes,del Castillo,Friday   ,231816498
+"first_name","last_name","day_of_week","week_income"
 Abraham,Bennet,Monday   ,231845241
-Abraham,Bennet,Sunday   ,232328748
-Abraham,Bennet,Friday   ,233935361
-Innes,del Castillo,Sunday   ,244679492
-Innes,del Castillo,Wednesday,245730068
-Innes,del Castillo,Saturday ,245765313
-Heather,McBadden,Friday   ,245868794
-Innes,del Castillo,Thursday ,247744631
-Heather,McBadden,Wednesday,249479672
-Abraham,Bennet,Tuesday  ,259058032
-Heather,McBadden,Saturday ,260891531
-Innes,del Castillo,Monday   ,260992756
-Heather,McBadden,Sunday   ,266458385
-Heather,McBadden,Tuesday  ,267891418
-Innes,del Castillo,Tuesday  ,285473369
-Heather,McBadden,Thursday ,289587876
-Heather,McBadden,Monday   ,293014643
-Albert,Ringer,Friday   ,357492149
-Albert,Ringer,Saturday ,359055422
-Albert,Ringer,Sunday   ,362985487
-Albert,Ringer,Monday   ,392378038
-Albert,Ringer,Wednesday,403718425
-Albert,Ringer,Thursday ,405676715
-Albert,Ringer,Tuesday  ,419021705
-Michel,DeFrance,Sunday   ,438321489
-Michel,DeFrance,Wednesday,439203901
-Michel,DeFrance,Tuesday  ,467420387
-Michel,DeFrance,Friday   ,473980679
+Reginald,Blotchet-Halls,Monday   ,103178571
+Cheryl,Carson,Monday   ,77977657
 Michel,DeFrance,Monday   ,479584921
-Michel,DeFrance,Saturday ,480574641
-Michel,DeFrance,Thursday ,481154817
-Dirk,Stringer,Wednesday,642376642
-Dirk,Stringer,Friday   ,672023524
-Dirk,Stringer,Thursday ,693463721
-Dirk,Stringer,Sunday   ,698820601
-Dirk,Stringer,Saturday ,724561952
-Dirk,Stringer,Tuesday  ,734550038
+Ann,Dull,Monday   ,39656842
+Marjorie,Green,Monday   ,97539868
+Morningstar,Greene,Monday   ,67381291
+Burt,Gringlesby,Monday   ,118429815
+Sheryl,Hunter,Monday   ,153301531
+Livia,Karsen,Monday   ,132386625
+Charlene,Locksley,Monday   ,108450663
+Stearns,MacFeather,Monday   ,30778276
+Heather,McBadden,Monday   ,293014643
+Michael,O'Leary,Monday   ,138096278
+Sylvia,Panteley,Monday   ,96399427
+Albert,Ringer,Monday   ,392378038
+Anne,Ringer,Monday   ,53386961
+Meander,Smith,Monday   ,52160238
+Dean,Straight,Monday   ,192550177
 Dirk,Stringer,Monday   ,759341454
+Johnson,White,Monday   ,98560782
+Innes,del Castillo,Monday   ,260992756
+Abraham,Bennet,Tuesday  ,259058032
+Reginald,Blotchet-Halls,Tuesday  ,89298154
+Cheryl,Carson,Tuesday  ,76905547
+Michel,DeFrance,Tuesday  ,467420387
+Ann,Dull,Tuesday  ,38097808
+Marjorie,Green,Tuesday  ,102488971
+Morningstar,Greene,Tuesday  ,67737441
+Burt,Gringlesby,Tuesday  ,114454018
+Sheryl,Hunter,Tuesday  ,163754751
+Livia,Karsen,Tuesday  ,145696078
+Charlene,Locksley,Tuesday  ,102419646
+Stearns,MacFeather,Tuesday  ,31056506
+Heather,McBadden,Tuesday  ,267891418
+Michael,O'Leary,Tuesday  ,125258271
+Sylvia,Panteley,Tuesday  ,99289901
+Albert,Ringer,Tuesday  ,419021705
+Anne,Ringer,Tuesday  ,55417862
+Meander,Smith,Tuesday  ,63913954
+Dean,Straight,Tuesday  ,183459092
+Dirk,Stringer,Tuesday  ,734550038
+Johnson,White,Tuesday  ,100275590
+Innes,del Castillo,Tuesday  ,285473369
+Abraham,Bennet,Wednesday,214842815
+Reginald,Blotchet-Halls,Wednesday,80548671
+Cheryl,Carson,Wednesday,66729907
+Michel,DeFrance,Wednesday,439203901
+Ann,Dull,Wednesday,35589006
+Marjorie,Green,Wednesday,94949352
+Morningstar,Greene,Wednesday,64838804
+Burt,Gringlesby,Wednesday,119047498
+Sheryl,Hunter,Wednesday,140290965
+Livia,Karsen,Wednesday,156662691
+Charlene,Locksley,Wednesday,106731411
+Stearns,MacFeather,Wednesday,24953855
+Heather,McBadden,Wednesday,249479672
+Michael,O'Leary,Wednesday,134525041
+Sylvia,Panteley,Wednesday,85876351
+Albert,Ringer,Wednesday,403718425
+Anne,Ringer,Wednesday,46106241
+Meander,Smith,Wednesday,49655899
+Dean,Straight,Wednesday,168092852
+Dirk,Stringer,Wednesday,642376642
+Johnson,White,Wednesday,89036569
+Innes,del Castillo,Wednesday,245730068
+Abraham,Bennet,Thursday ,226133921
+Reginald,Blotchet-Halls,Thursday ,89971578
+Cheryl,Carson,Thursday ,70730736
+Michel,DeFrance,Thursday ,481154817
+Ann,Dull,Thursday ,36627442
+Marjorie,Green,Thursday ,90204716
+Morningstar,Greene,Thursday ,61407062
+Burt,Gringlesby,Thursday ,103250742
+Sheryl,Hunter,Thursday ,148434253
+Livia,Karsen,Thursday ,168820566
+Charlene,Locksley,Thursday ,102081558
+Stearns,MacFeather,Thursday ,22585497
+Heather,McBadden,Thursday ,289587876
+Michael,O'Leary,Thursday ,130193803
+Sylvia,Panteley,Thursday ,91590683
+Albert,Ringer,Thursday ,405676715
+Anne,Ringer,Thursday ,55678731
+Meander,Smith,Thursday ,56688841
+Dean,Straight,Thursday ,182913508
+Dirk,Stringer,Thursday ,693463721
+Johnson,White,Thursday ,91715665
+Innes,del Castillo,Thursday ,247744631
+Abraham,Bennet,Friday   ,233935361
+Reginald,Blotchet-Halls,Friday   ,96796982
+Cheryl,Carson,Friday   ,80473505
+Michel,DeFrance,Friday   ,473980679
+Ann,Dull,Friday   ,37433122
+Marjorie,Green,Friday   ,99954937
+Morningstar,Greene,Friday   ,62929145
+Burt,Gringlesby,Friday   ,109360163
+Sheryl,Hunter,Friday   ,158669557
+Livia,Karsen,Friday   ,172939429
+Charlene,Locksley,Friday   ,97761375
+Stearns,MacFeather,Friday   ,28022436
+Heather,McBadden,Friday   ,245868794
+Michael,O'Leary,Friday   ,142326764
+Sylvia,Panteley,Friday   ,91390801
+Albert,Ringer,Friday   ,357492149
+Anne,Ringer,Friday   ,51753352
+Meander,Smith,Friday   ,53551958
+Dean,Straight,Friday   ,176048825
+Dirk,Stringer,Friday   ,672023524
+Johnson,White,Friday   ,91757930
+Innes,del Castillo,Friday   ,231816498
+Abraham,Bennet,Saturday ,219357051
+Reginald,Blotchet-Halls,Saturday ,92451664
+Cheryl,Carson,Saturday ,69224918
+Michel,DeFrance,Saturday ,480574641
+Ann,Dull,Saturday ,37658782
+Marjorie,Green,Saturday ,95303143
+Morningstar,Greene,Saturday ,64598715
+Burt,Gringlesby,Saturday ,108212069
+Sheryl,Hunter,Saturday ,143802265
+Livia,Karsen,Saturday ,142421335
+Charlene,Locksley,Saturday ,100507642
+Stearns,MacFeather,Saturday ,27623848
+Heather,McBadden,Saturday ,260891531
+Michael,O'Leary,Saturday ,131118669
+Sylvia,Panteley,Saturday ,87097890
+Albert,Ringer,Saturday ,359055422
+Anne,Ringer,Saturday ,48579238
+Meander,Smith,Saturday ,53094398
+Dean,Straight,Saturday ,176094744
+Dirk,Stringer,Saturday ,724561952
+Johnson,White,Saturday ,91955960
+Innes,del Castillo,Saturday ,245765313
+Abraham,Bennet,Sunday   ,232328748
+Reginald,Blotchet-Halls,Sunday   ,80496473
+Cheryl,Carson,Sunday   ,69553596
+Michel,DeFrance,Sunday   ,438321489
+Ann,Dull,Sunday   ,34138288
+Marjorie,Green,Sunday   ,104815534
+Morningstar,Greene,Sunday   ,68473054
+Burt,Gringlesby,Sunday   ,112782281
+Sheryl,Hunter,Sunday   ,148514539
+Livia,Karsen,Sunday   ,137975385
+Charlene,Locksley,Sunday   ,93745117
+Stearns,MacFeather,Sunday   ,27431435
+Heather,McBadden,Sunday   ,266458385
+Michael,O'Leary,Sunday   ,125981635
+Sylvia,Panteley,Sunday   ,95337213
+Albert,Ringer,Sunday   ,362985487
+Anne,Ringer,Sunday   ,49050829
+Meander,Smith,Sunday   ,56678280
+Dean,Straight,Sunday   ,176873006
+Dirk,Stringer,Sunday   ,698820601
+Johnson,White,Sunday   ,88933984
+Innes,del Castillo,Sunday   ,244679492
