@@ -28,3 +28,5 @@ GROUP BY e2.employee_id
         ) sub
     )
 ORDER BY average_income ASC;
+
+
