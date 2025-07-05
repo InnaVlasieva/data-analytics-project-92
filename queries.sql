@@ -29,4 +29,16 @@ GROUP BY e2.employee_id
     )
 ORDER BY average_income ASC;
 
+--Отчет с данными по выручке по каждому продавцу и дню недели - day_of_the_week_income
+SELECT 
+    e.first_name || ' ' || e.last_name AS seller,
+    TO_CHAR(s.sale_date, 'day') AS day_of_week,
+    FLOOR(SUM(s.quantity * p.price)) AS income
+FROM employees e
+INNER JOIN sales s on e.employee_id = s.sales_person_id
+inner JOIN products p  on s.product_id = p.product_id
+GROUP BY  e.first_name || ' ' || e.last_name, 
+TO_CHAR(s.sale_date, 'day'), EXTRACT(ISODOW FROM s.sale_date)
+ORDER BY EXTRACT(ISODOW FROM s.sale_date),  e.first_name || ' ' || e.last_name;
+
 
