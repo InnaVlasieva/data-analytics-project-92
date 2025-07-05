@@ -36,7 +36,7 @@ SELECT
     FLOOR(SUM(s.quantity * p.price)) AS income
 FROM employees e
 INNER JOIN sales s on e.employee_id = s.sales_person_id
-inner JOIN products p  on s.product_id = p.product_id
+INNER JOIN products p  on s.product_id = p.product_id
 GROUP BY  e.first_name || ' ' || e.last_name, 
 TO_CHAR(s.sale_date, 'day'), EXTRACT(ISODOW FROM s.sale_date)
 ORDER BY EXTRACT(ISODOW FROM s.sale_date),  e.first_name || ' ' || e.last_name;
@@ -52,4 +52,16 @@ SELECT
 FROM customers
 GROUP BY age_category
 order by age_category;
+
+-- данные по количеству уникальных покупателей и выручке, которую они принесли-customers_by_month
+SELECT 
+    TO_CHAR(s.sale_date, 'YYYY-MM') AS selling_month,
+    COUNT(DISTINCT c.customer_id) AS total_customers,
+    FLOOR (SUM(s.quantity * p.price)) AS income
+FROM employees e
+INNER JOIN sales s on e.employee_id = s.sales_person_id
+INNER JOIN products p  on s.product_id = p.product_id    
+inner join customers c on c.customer_id = s.customer_id    
+GROUP BY TO_CHAR(s.sale_date, 'YYYY-MM')
+ORDER BY selling_month ASC;
 
