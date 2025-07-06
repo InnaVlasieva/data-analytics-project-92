@@ -35,16 +35,17 @@ HAVING
 ORDER BY average_income ASC;
 
 --Отчет с данными по выручке по каждому продавцу и дню недели - day_of_the_week_income
-SELECT 
+SELECT
     e.first_name || ' ' || e.last_name AS seller,
     TO_CHAR(s.sale_date, 'day') AS day_of_week,
     FLOOR(SUM(s.quantity * p.price)) AS income
-FROM employees e
-INNER JOIN sales s on e.employee_id = s.sales_person_id
-INNER JOIN products p  on s.product_id = p.product_id
-GROUP BY  e.first_name || ' ' || e.last_name, 
-TO_CHAR(s.sale_date, 'day'), EXTRACT(ISODOW FROM s.sale_date)
-ORDER BY EXTRACT(ISODOW FROM s.sale_date),  e.first_name || ' ' || e.last_name;
+FROM employees AS e
+INNER JOIN sales AS s ON e.employee_id = s.sales_person_id
+INNER JOIN products AS p ON s.product_id = p.product_id
+GROUP BY
+    e.first_name || ' ' || e.last_name,
+    TO_CHAR(s.sale_date, 'day'), EXTRACT(ISODOW FROM s.sale_date)
+ORDER BY EXTRACT(ISODOW FROM s.sale_date), e.first_name || ' ' || e.last_name;
 
 -- количество покупателей в разных возрастных группах - age_groups
 SELECT 
