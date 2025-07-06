@@ -1,5 +1,5 @@
-select COUNT (customer_id) as customers_count
-from customers c;
+select COUNT(customer_id) as customers_count
+from customers;
 -- считает общее количество покупателей из таблицы customers
 
 --  отчет с продавцами у которых наибольшая выручка - top_10_total_income.csv 
