@@ -48,8 +48,8 @@ GROUP BY
 ORDER BY EXTRACT(ISODOW FROM s.sale_date), e.first_name || ' ' || e.last_name;
 
 -- количество покупателей в разных возрастных группах - age_groups
-SELECT 
-    CASE 
+SELECT
+    CASE
         WHEN age BETWEEN 16 AND 25 THEN '16-25'
         WHEN age BETWEEN 26 AND 40 THEN '26-40'
         ELSE '40+'
@@ -57,39 +57,41 @@ SELECT
     COUNT(customer_id) AS age_count
 FROM customers
 GROUP BY age_category
-order by age_category;
+ORDER BY age_category;
 
 -- данные по количеству уникальных покупателей и выручке, которую они принесли-customers_by_month
-SELECT 
+SELECT
     TO_CHAR(s.sale_date, 'YYYY-MM') AS selling_month,
     COUNT(DISTINCT c.customer_id) AS total_customers,
-    FLOOR (SUM(s.quantity * p.price)) AS income
-FROM employees e
-INNER JOIN sales s on e.employee_id = s.sales_person_id
-INNER JOIN products p  on s.product_id = p.product_id    
-INNER join customers c on c.customer_id = s.customer_id    
+    FLOOR(SUM(s.quantity * p.price)) AS income
+FROM employees AS e
+INNER JOIN sales AS s ON e.employee_id = s.sales_person_id
+INNER JOIN products AS p ON s.product_id = p.product_id
+INNER JOIN customers AS c ON s.customer_id = c.customer_id
 GROUP BY TO_CHAR(s.sale_date, 'YYYY-MM')
 ORDER BY selling_month ASC;
 
 -- с покупателями первая покупка которых пришлась на время проведения специальных акций - special_offer
 WITH first_sales AS (
-    SELECT 
+    SELECT
         customer_id,
         MIN(sale_date) AS first_sale_date
     FROM sales
     GROUP BY customer_id
 )
+
 SELECT DISTINCT
     c.first_name || ' ' || c.last_name AS customer,
     TO_CHAR(s.sale_date, 'YYYY-MM-DD') AS sale_date,
     e.first_name || ' ' || e.last_name AS seller
-FROM employees e
-INNER JOIN sales s on e.employee_id = s.sales_person_id
-INNER JOIN products p  on s.product_id = p.product_id    
-INNER join customers c on c.customer_id = s.customer_id    
-INNER JOIN first_sales fs 
-    ON c.customer_id = fs.customer_id 
-    AND s.sale_date = fs.first_sale_date
+FROM employees AS e
+INNER JOIN sales AS s ON e.employee_id = s.sales_person_id
+INNER JOIN products AS p ON s.product_id = p.product_id
+INNER JOIN customers AS c ON s.customer_id = c.customer_id
+INNER JOIN first_sales AS fs
+    ON
+        c.customer_id = fs.customer_id
+        AND s.sale_date = fs.first_sale_date
 WHERE p.price = 0
 ORDER BY customer;
 
