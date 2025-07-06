@@ -61,7 +61,7 @@ SELECT
 FROM employees e
 INNER JOIN sales s on e.employee_id = s.sales_person_id
 INNER JOIN products p  on s.product_id = p.product_id    
-inner join customers c on c.customer_id = s.customer_id    
+INNER join customers c on c.customer_id = s.customer_id    
 GROUP BY TO_CHAR(s.sale_date, 'YYYY-MM')
 ORDER BY selling_month ASC;
 
