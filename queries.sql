@@ -29,6 +29,28 @@ GROUP BY e2.employee_id
     )
 ORDER BY average_income ASC;
 
+-- с покупателями первая покупка которых пришлась на время проведения специальных акций - special_offer
+WITH first_sales AS (
+    SELECT 
+        customer_id,
+        MIN(sale_date) AS first_sale_date
+    FROM sales
+    GROUP BY customer_id
+)
+SELECT DISTINCT
+    c.first_name || ' ' || c.last_name AS customer,
+    TO_CHAR(s.sale_date, 'YYYY-MM-DD') AS sale_date,
+    e.first_name || ' ' || e.last_name AS seller
+FROM employees e
+INNER JOIN sales s on e.employee_id = s.sales_person_id
+INNER JOIN products p  on s.product_id = p.product_id    
+INNER join customers c on c.customer_id = s.customer_id    
+INNER JOIN first_sales fs 
+    ON c.customer_id = fs.customer_id 
+    AND s.sale_date = fs.first_sale_date
+WHERE p.price = 0
+ORDER BY customer;
+
 --Отчет с данными по выручке по каждому продавцу и дню недели - day_of_the_week_income
 SELECT 
     e.first_name || ' ' || e.last_name AS seller,
