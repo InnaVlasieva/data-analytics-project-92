@@ -72,26 +72,27 @@ GROUP BY TO_CHAR(s.sale_date, 'YYYY-MM')
 ORDER BY selling_month ASC;
 
 -- с покупателями первая покупка которых пришлась на время проведения специальных акций - special_offer
-WITH first_sales AS (
+WITH price_null AS (
+    SELECT product_id
+    FROM products
+    WHERE price = 0
+),
+first_null_sales AS (
     SELECT
-        customer_id,
-        MIN(sale_date) AS first_sale_date
-    FROM sales
-    GROUP BY customer_id
+        s.customer_id,
+        MIN(s.sale_date) AS first_null_sale_date
+    FROM sales s
+    INNER JOIN price_null pn ON s.product_id = pn.product_id
+    GROUP BY s.customer_id
 )
-
-SELECT DISTINCT
+SELECT 
     c.first_name || ' ' || c.last_name AS customer,
     TO_CHAR(s.sale_date, 'YYYY-MM-DD') AS sale_date,
     e.first_name || ' ' || e.last_name AS seller
-FROM employees AS e
-INNER JOIN sales AS s ON e.employee_id = s.sales_person_id
-INNER JOIN products AS p ON s.product_id = p.product_id
-INNER JOIN customers AS c ON s.customer_id = c.customer_id
-INNER JOIN first_sales AS fs
-    ON
-        c.customer_id = fs.customer_id
-        AND s.sale_date = fs.first_sale_date
-WHERE p.price = 0
+FROM sales s
+INNER JOIN products p ON s.product_id = p.product_id
+INNER JOIN customers c ON s.customer_id = c.customer_id
+INNER JOIN employees e ON s.sales_person_id = e.employee_id
+INNER JOIN first_null_sales fs ON s.customer_id = fs.customer_id AND s.sale_date = fs.first_null_sale_date
+group by s.sale_date, c.first_name || ' ' || c.last_name, e.first_name || ' ' || e.last_name
 ORDER BY customer;
-
